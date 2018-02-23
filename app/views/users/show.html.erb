@@ -1,0 +1,7 @@
+<h1>User's Profile</h1>
+
+<div id='fname'><%= @user.fname %></div>
+<div id='username'><%= @user.username %></div>
+<div id='email'><%= @user.email %></div>
+
+<%= link_to 'Delete', user_path, method: :delete %>
