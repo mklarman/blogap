@@ -1,7 +1,37 @@
-<h2>Show individual blog-post</h2>
+<div id='blogHeading'><h2>Show individual blog-post</h2></div>
 
 
-<a href="/blogs/#{:id}"><%= @blog.title %></a>
+<a href="/blogs/<%= @blog.id %>"><%= @blog.title %></a>
 <hr>
 
+<div id='content'><%= @blog.content %>
+
+<a href="/blogs/<%= @blog.id %>/edit">Edit Blog</a>
+</div>
+
 <%= link_to 'Delete', blog_path, method: :delete %>
+
+
+<hr>
+
+Create a comment
+
+
+<%= form_with(model: @comment, local: true) do |c| %>
+<%=	c.text_area :content%>
+<%= c.hidden_field :blog_id, :value => @blog.id %>
+<%=	c.submit %>
+<% end %>
+
+
+
+<br>
+<% @blog.comments.each do |c| %>
+<div><a href="<%= "/comments/#{c.id}/edit" %>"><%= c.content %></a></div>
+<%= link_to 'Delete', "/comments/#{c.id}", method: :delete %>
+
+<% end %>
+
+
+
+

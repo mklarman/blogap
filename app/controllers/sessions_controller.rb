@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 		if @user && @user.authenticate(params[:password])
 			session[:user_id] = @user.id 
 			flash[:message] = 'you are logged in'
-			redirect_to "/"
+			redirect_to "/users/#{@user.id}"
 		else 
 			flash[:message] = 'try again'
 			redirect_to '/login'

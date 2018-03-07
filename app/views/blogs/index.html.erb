@@ -2,7 +2,7 @@
 
 <% @blogs.each do |b| %>
 
-<div><%= b.title %></div>
+<a href="/blogs/<%= b.id %>"><div><%= b.title %></div></a>
 <div><%= b.content %></div>
 
 <% end %>

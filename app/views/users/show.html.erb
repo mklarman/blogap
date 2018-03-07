@@ -1,7 +1,23 @@
+<div id='profile'>
 <h1>User's Profile</h1>
+</div>
 
-<div id='fname'><%= @user.fname %></div>
-<div id='username'><%= @user.username %></div>
-<div id='email'><%= @user.email %></div>
+<div id='container'>
 
-<%= link_to 'Delete', user_path, method: :delete %>
+First Name: <div id='fname'><%= @user.fname %></div>
+Username: <div id='username1'><%= @user.username %></div>
+Email: <div id='email'><%= @user.email %></div>
+
+</div>
+<div id='words'>
+<p>Enter East Coast, West Coast, Mid-West, South-West</p>
+</div>
+
+<div id='city'>
+<input id='input' type="text" name="">
+<input id='submit' type="submit" name="Submit">
+</div>
+
+<div id='pic'></div>
+
+<div id='delete'><%= link_to 'Delete', user_path, method: :delete %></div>
