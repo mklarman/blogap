@@ -1,12 +1,14 @@
-<h1>Edit Your Account</h1>
+<div id='editAccount'><h1>Edit Your Account</h1></div>
 
 <%= form_for @user do |f| %>
+<div id='editForm'>
+	<div class='firstName'>First_Name:<%= f.text_field :fname %><br></div>
+	<div class='firstName'>Last_Name:<%= f.text_field :lname %><br></div>
+	<div class='firstName'>Email:<%= f.text_field :email %><br></div>
+	<div class='firstName'>Username:<%= f.text_field :username %><br></div>
+	<div class='firstName'>Password:<%= f.text_field :password %><br></div>
+	<div class='firstName'><%= f.submit %>
 
-First_Name:<%= f.text_field :fname %><br>
-Last_Name:<%= f.text_field :lname %><br>
-Email:<%= f.text_field :email %><br>
-Username:<%= f.text_field :username %><br>
-Password:<%= f.text_field :password %><br>
-<%= f.submit %>
 <% end %>
+</div>
 

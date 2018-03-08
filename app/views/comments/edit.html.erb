@@ -1,14 +1,11 @@
 <div id='editComm'><h2>Edit Your Comment</h2></div>
 
-<div id='editForm'>
+
 <%= form_for @comment do |f| %>
+<div id='editForm'>
 <%= f.text_area :content %>
 <%= f.submit %>
 <% end %>
 </div>
 
 
-<div id='NFL'></div>
-<div id='MLB'></div>
-<div id='NBA'></div>
-<div id='NHL'></div>

@@ -13,7 +13,7 @@
       <% if logged_in? %>
           <li><%= link_to 'Log out', '/logout', {method: 'post'} %></li>
           <li><a href='/blogs/new'>New Blog</a></li>
-          <li><a href="<%= current_user.id %>/edit">Edit User</a></li>
+          <li><a href="/users/<%= current_user.id %>/edit">Edit User</a></li>
           <li><a href="/users/<%= current_user.id %>">My Profile</a></li>
        <% end %>
        
@@ -32,10 +32,11 @@
 
   	<%= flash[:message] if flash[:message] %>
     <%= yield %>
-
-<div id='NFL'></div>
-<div id='MLB'></div>
-<div id='NBA'></div>
-<div id='NHL'></div>
+<div id='images'>
+  <div id='NFL'></div>
+  <div id='MLB'></div>
+  <div id='NBA'></div>
+  <div id='NHL'></div>
+</div>
   </body>
 </html>

@@ -1,8 +1,8 @@
-<h2 class='bloglist'>List of all Blogs:</h2>
+<div id='bloglist'><h2>List of all Blogs:</h2></div>
 
 <% @blogs.each do |b| %>
 
-<a href="/blogs/<%= b.id %>"><div><%= b.title %></div></a>
-<div><%= b.content %></div>
+<a href="/blogs/<%= b.id %>"><div id='blogTitle'><%= b.title %></div></a>
+<div id='blogContent'><%= b.content %></div>
 
 <% end %>

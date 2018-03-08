@@ -1,5 +1,104 @@
+#bloglist{
+	height: 200px;
+	width: 700px;
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+	margin-top: -150px;	
+}
+#blogTitle{
+	height: 40px;
+	width: 100px;
+	margin-left: 500px;
+	font-size: 25px;
+	padding: 10px;
+	
+}
+
+#blogContent{
+	height: 40px;
+	width: 500px;
+	margin-left: 500px;
+	font-size: 25px;
+	overflow: none;
+	padding: 5px;
+	
+}
+
 #blogHeading{
-	height: 150px;
+	height: 200px;
+	width: 700px;
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+	margin-top: -150px;	
+
+}
+#listTitle{
+	height: 40px;
 	width: 150px;
-	border: 2px solid white;
+	margin-left: 500px;
+	font-size: 25px;
+	padding: 10px;
+
+}
+#content{
+	height: 40px;
+	width: 500px;
+	margin-left: 500px;
+	font-size: 20px;
+	overflow: none;
+	padding: 5px;
+
+}
+
+#headingComment{
+	height: 50px;
+	width: 300px;
+	border: 1px solid red;
+	margin-left: 500px;
+	margin-top: 25px;
+	font-size: 30px;
+}
+#commentForm{
+	height: 90px;
+	width: 250px;
+	text-align: center;
+	margin-left: 500px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#commentsLog{
+	height: 50px;
+	width: 200px;
+	margin-left: 500px;
+}
+#editContent{
+	height: 50px;
+	width: 200px;
+	margin-left: 150px;
+	font-size: 25px;
+
+}
+#deleteComm{
+	height: 500px;
+	width: 75px;
+	margin-top: -33px;
+	margin-left: 150px;
+	padding: 20px;
+}
+#editBlog{
+	height: 200px;
+	width: 700px;
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+	margin-top: -150px;	
+
+}
+#editForm{
+	height: 475px;
+	width: 250px;
+	text-align: center;
+	margin-left: 450px;
 }

@@ -1,9 +1,11 @@
-<h2>Edit your blog</h2>
+<div id='editBlog'><h2>Edit your blog</h2></div>
 
 
 <%= form_for @blog do |f| %>
 
-<%= f.text_field :title %>
-<%= f.text_area :content %>
-<%= f.submit %>
+<div id='editForm'>
+	<div class='firstName'><%= f.text_field :title %></div>
+	<div class='firstName'><%= f.text_area :content %></div>
+	<div class='firstName'><%= f.submit %></div>
+</div>
 <% end %>

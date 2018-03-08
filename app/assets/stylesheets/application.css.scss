@@ -2,6 +2,11 @@
 *= require_tree .
 *= require_self
 */
+#images{
+	height: 360px;
+	width: 1200px;
+	margin-left: -500px;
+}
 
 #NFL{
 	height: 300px;
@@ -10,6 +15,8 @@
 	margin-top: 50px;
 	background-image: url('nfl-logo.jpg');
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
 }
 
 #MLB{
@@ -19,6 +26,8 @@
 	margin-top: -300px; 
 	background-image: url('Mlb-logo.gif');
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
 }
 
 #NBA{
@@ -27,7 +36,9 @@
 	margin-left: 700px;
 	margin-top: -300px;
 	background-image: url('nba-logo.jpg');
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+ 
 }
 
 #NHL{
@@ -36,5 +47,7 @@
 	margin-left: 1000px;
 	margin-top: -300px;
 	background-image: url('NHL_Logo_former.svg.png');
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+ 
 }
